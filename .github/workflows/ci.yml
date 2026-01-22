@@ -56,7 +56,7 @@ jobs:
       - name: Run buildtool
         uses: matlab-actions/run-build@v2
         with:
-          tasks: test
+          tasks: compile
 
       # Configure GitHub Pages to accept your artifact uploads
       - name: Setup Pages
