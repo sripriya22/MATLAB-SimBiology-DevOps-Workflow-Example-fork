@@ -26,7 +26,7 @@ plan("clean") = CleanTask();
 
 % Define dependencies
 plan("compile").Dependencies = "test";
-plan("test").Dependencies = "check";
+plan("test").Dependencies = "generateSimFun";
 plan("generateSimFun").Dependencies = "check";
 
 % Define inputs and outputs
