@@ -53,13 +53,11 @@ jobs:
           cache: true
 
       # Run the MATLAB build tool to build and test your code
-      - name: Run buildtool
+      - name: Run_buildtool
         uses: matlab-actions/run-build@v2
         with:
           tasks: test
         continue-on-error: true
-        run: echo "This step will fail" && exit 1
-
 
       # Configure GitHub Pages to accept your artifact uploads
       - name: Setup Pages
@@ -76,7 +74,10 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-
+      # Define build as failure is tests failed
+      - name: CheckIfSomeStepFailed
+        if : steps.Run_buildtool.outcome == 'failure'
+        run: exit 1
 
       # ==================================== #
       # Alternate ways to run commands in CI #
