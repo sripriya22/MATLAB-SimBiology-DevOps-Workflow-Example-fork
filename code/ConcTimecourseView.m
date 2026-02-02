@@ -43,7 +43,8 @@ classdef ConcTimecourseView < handle
             obj.lhReceptor = plot(ax, NaN, NaN, '-','Linewidth',2,'Color',obj.ConcColors(2,:),'DisplayName','Receptor');
             obj.lhComplex= plot(ax, NaN, NaN, '-','Linewidth',2,'Color',obj.ConcColors(3,:),'DisplayName','Complex');
             hold(ax,'off');
-            legend(ax,'show','FontName',obj.FontName,'Box','off');
+            legend(ax,'show','FontName',obj.FontName,'Box','off',...
+                'BackgroundColor','none');
 
             ax.XLimitMethod = "padded";
             ax.YLimitMethod = "padded";
