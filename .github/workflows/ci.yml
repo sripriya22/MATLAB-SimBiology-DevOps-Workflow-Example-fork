@@ -60,8 +60,9 @@ jobs:
           tasks: compile
 
       - name: Upload CTF file
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
+          name: WebApp_CTF
           path: WebAppArchive/*.ctf
 
       # Configure GitHub Pages to accept your artifact uploads
