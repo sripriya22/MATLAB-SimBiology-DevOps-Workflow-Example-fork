@@ -31,13 +31,13 @@ concurrency:
 jobs:
 
   test:
-    name: PR checks
+
+    name: Test dev branch
     if: ${{ github.event_name == 'pull_request' }}
     runs-on: ubuntu-latest
     steps:
       # Check out your repository
       - uses: actions/checkout@v5
-
 
       # Set up MATLAB on a GitHub-hosted runner
       - name: Setup MATLAB
@@ -50,7 +50,7 @@ jobs:
       - name: Run buildtool
         uses: matlab-actions/run-build@v2
         with:
-          tasks: test  # change to compile
+          tasks: test 
 
 
   build:
