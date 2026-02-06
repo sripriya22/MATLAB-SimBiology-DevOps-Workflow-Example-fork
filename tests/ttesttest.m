@@ -8,10 +8,10 @@ classdef ttesttest < matlab.unittest.TestCase
             sObj.simulate();
 
             % Exercise the function all
-            actualOutput = all(ismember(sObj.SimData.DataNames,["Drug","Receptor","Complex","RO"]));
+            actualOutput = ismember(sObj.SimData.DataNames,["Drug","Receptor","Complex","RO"]);
 
             % Specify the expected output(s) of all
-            expectedOutput = true;
+            expectedOutput = true(size(sObj.SimData.DataNames));
 
             testCase.verifyEqual(actualOutput, expectedOutput);
         end
