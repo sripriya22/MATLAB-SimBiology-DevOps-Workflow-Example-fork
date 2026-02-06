@@ -1,6 +1,6 @@
-[![MATLAB](https://github.com/ChezJe/MATLAB-SimBiology-DevOps-Workflow-Example/actions/workflows/ci.yml/badge.svg)](https://github.com/ChezJe/MATLAB-SimBiology-DevOps-Workflow-Example/actions/workflows/ci.yml)
-[![Tests](https://img.shields.io/badge/Tests-Open_Test_Report-blue)](https://ChezJe.github.io/MATLAB-SimBiology-DevOps-Workflow-Example/tests/)
-[![Coverage](https://img.shields.io/badge/Coverage-Open_Code_Coverage_Report-orange)](https://ChezJe.github.io/MATLAB-SimBiology-DevOps-Workflow-Example/coverage/)
+[![MATLAB](https://github.com/sripriya22/MATLAB-SimBiology-DevOps-Workflow-Example-fork/actions/workflows/ci.yml/badge.svg)](https://github.com/sripriya22/MATLAB-SimBiology-DevOps-Workflow-Example-fork/actions/workflows/ci.yml)
+[![Tests](https://img.shields.io/badge/Tests-Open_Test_Report-blue)](https://sripriya22.github.io/MATLAB-SimBiology-DevOps-Workflow-Example-fork/tests/)
+[![Coverage](https://img.shields.io/badge/Coverage-Open_Code_Coverage_Report-orange)](https://sripriya22.github.io/MATLAB-SimBiology-DevOps-Workflow-Example-fork/coverage/)
 
 # MATLAB<sup>&reg;</sup>/SimBiology<sup>&reg;</sup> DevOps Workflow Example
 
