@@ -31,7 +31,7 @@ classdef SimulationModelTest < matlab.unittest.TestCase
         function testROIsBetweenThresholds(testCase)
             testCase.model.simulate();
             roiValue = testCase.model.ROIsBetweenThresholds;
-            testCase.verifyTrue(roiValue || ~roiValue); % should be a logical value
+            testCase.verifyClass(roiValue, "logical");
         end
 
         function testSimulateWithCustomParameters(testCase)
